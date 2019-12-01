@@ -38,6 +38,10 @@ def map_to_square(source_array)
   return result
 end 
 
+def reduce_to_total (source_array)
+  return reduce_to_total(source_array, 0)
+end
+
 def reduce_to_total (source_array, starting_point)
   i = 0  
   puts "<><><>"
