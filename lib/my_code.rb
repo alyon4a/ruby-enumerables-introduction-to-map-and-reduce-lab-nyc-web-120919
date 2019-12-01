@@ -41,13 +41,7 @@ end
 
 def reduce_to_total (source_array, starting_point = 0)
     
-  puts "<><><>"
-  puts source_array
-  puts starting_point
-  result = 0
-  if starting_point then 
-    result = starting_point
-  end
+  result = starting_point
   
   i = 0
   while i < source_array.size do
@@ -58,9 +52,19 @@ def reduce_to_total (source_array, starting_point = 0)
 end
 
 def reduce_to_all_true(source_array)
-  return source_array
+  i = 0
+  while i < source_array.size do
+    if (!source_array[i]) then return false end
+    i += 1
+  end
+  return true
 end
 
 def reduce_to_any_true(source_array) 
-  return source_array
+  i = 0
+  while i < source_array.size do
+    if (source_array[i]) then return true end
+    i += 1
+  end
+  return false
 end
