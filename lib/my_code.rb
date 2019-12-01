@@ -43,15 +43,16 @@ def reduce_to_total (source_array)
 end
 
 def reduce_to_total (source_array, starting_point)
-  i = 0  
+    
   puts "<><><>"
   puts source_array
   puts starting_point
-  if starting_point then 
-    i = starting_point
-  end
   result = 0
+  if starting_point then 
+    result = starting_point
+  end
   
+  i = 0
   while i < source_array.size do
     result += source_array[i]
     i += 1
