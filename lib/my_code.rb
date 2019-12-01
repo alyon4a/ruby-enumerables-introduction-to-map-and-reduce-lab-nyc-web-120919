@@ -43,10 +43,10 @@ def reduce_to_total(source_array, starting_point)
   if starting_point then 
     i = starting_point
   end
-  result = []
+  result = 0
   
   while i < source_array.size do
-    result[i] = source_array[i] ** 2 
+    result += source_array[i]
     i += 1
   end
   return result
